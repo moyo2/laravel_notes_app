@@ -14,6 +14,7 @@
         {{session('message')}}     
     </div>
     @endsession
+    
 {{$slot}}    
 </body>
 </html>

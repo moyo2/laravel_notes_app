@@ -61,7 +61,12 @@ class NoteController extends Controller
      */
     public function update(Request $request, Note $note)
     {
-        //
+        $data = $request ->validate([
+            'note' => ['required', 'string']
+            ]);
+            $note->update($data);
+            return to_route('note.index', $note)->with('message','Note was updated');
+            
     }
 
     /**
@@ -69,6 +74,8 @@ class NoteController extends Controller
      */
     public function destroy(Note $note)
     {
-        //note.
+            $note->delete();
+            return to_route('note.index', $note)->with('message','Note was deleted successfully');
+            
     }
 }
