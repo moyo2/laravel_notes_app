@@ -16,3 +16,4 @@ use Illuminate\Support\Facades\Route;
 //this code is the same as the above commented code it is a shorthand
 
 Route::resource("note", NoteController::class);
+Route::resource("welcome", welcomecontroller::class);

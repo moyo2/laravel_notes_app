@@ -12,7 +12,7 @@
      <div class="note-buttons">
           <a href="{{Route('note.show', $note)}}" class="note-edit-button">View</a>
           <a href="{{Route('note.edit', $note)}}" class="note-edit-button">Edit</a>
-          <a href="" class="note-edit-button">Delete</a>
+          <a href="" class="note-delete-button">Delete</a>
      </div>
 </div>
      
