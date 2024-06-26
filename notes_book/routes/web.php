@@ -17,10 +17,9 @@ Route::middleware(['auth', 'verified'])->group(function (){
 // Route::delete('/note/{id}', [NoteController::class,'destroy'])->name('note.destroy');    
 
 //this code is the same as the above commented code it is a shorthand
-
 Route::resource("note", NoteController::class);
-
 });
+
 
 
 
